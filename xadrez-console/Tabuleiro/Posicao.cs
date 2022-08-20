@@ -1,4 +1,4 @@
-﻿namespace Tabuleiro
+﻿namespace tabuleiro
 {
     class Posicao
     {
@@ -8,9 +8,13 @@
         public Posicao (int linha, int coluna)
         {
             Linha = linha;
-            Coluna = coluna;
+            Coluna = coluna; 
         }
 
-
+        public override string ToString()
+        {
+            return
+                Linha + ", " + Coluna;
+        }
     }
 }
